@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's coming to play??</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <h1>Submit the name of your dog that is joining us today!</h1>
+    <form action="/dogs" method="POST">
+    <label for="name">Name:</label>
+    <input type="text" name="name" id="name" required/>
+        
+  
+    <label for="isReadyToPlay">Ready to Play?</label>
+    <input type="checkbox" name="isComingToPlay" id="isReadyToPlay" />
+    <br/>  
+    <button type="submit">Is coming to play!</button>
+    </form>
+  </body>
+<a href="/dogs/">Back to Dogs</a>
+</html>

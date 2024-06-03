@@ -1,0 +1,97 @@
+/* public/styles/styles.css */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    padding: 0;
+}
+
+h1 {
+    color: #333;
+    text-align: center;
+    margin-top: 20px;
+}
+
+
+p {
+    color: #000000;
+    text-decoration: none;
+    margin: 20px auto;  /* Center the link and add vertical space */
+    display: inline-block;
+    max-width: 90%;  /* Ensure it doesn't touch the edges */
+    padding-left: 15px;
+}
+
+
+
+a {
+    color: #007bff;
+    text-decoration: none;
+    margin: 20px auto;  /* Center the link and add vertical space */
+    display: inline-block;
+    max-width: 90%;  /* Ensure it doesn't touch the edges */
+    padding-left: 15px;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+form {
+    max-width: 600px;
+    margin: 40px auto;
+    padding: 20px;
+    background: #fff;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+label {
+    display: block;
+    margin: 10px 0 5px;
+    font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+input[type="checkbox"] {
+    margin-right: 10px;
+}
+
+.checkbox-container {
+    margin-bottom: 20px; 
+}
+
+button {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #007bff;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+#deletebtn {
+    background: transparent;  
+    border: none;
+    padding: 0;
+    box-shadow: none;
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    margin: 15px;
+}
+
+button:hover {
+    background: #0056b3;
+}

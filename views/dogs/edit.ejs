@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Who's coming to play??</title>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <h1>Edit <%= dog.name %></h1>
+    <form action="/dogs/<%=dog._id%>?_method=PUT" method="POST">
+        <label for="name">Name:</label>
+        <input type="text" name="name" value="<%= dog.name %>" id="name" />
+      
+        <label for="isComingToPlay">Ready to Play?</label>
+        <input type="checkbox" name="isComingToPlay" id="isComingToPlay" <%= dog.isComingToPlay ? 'checked' : '' %> />
+        <br/>
+        <label for="profile"><%= dog.name %>'s personality/temperance/looking4friends?</label> 
+        <textarea id="profile" name="profile"><%= dog.profile %></textarea>
+        <br/>
+        <button type="submit">Save Changes</button>
+      </form>
+    <a href="/dogs">Back to dogs</a>
+  </body>
+
+</html>

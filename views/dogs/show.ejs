@@ -1,0 +1,27 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%= dog.name %></title>
+    <link rel="stylesheet" href="/styles/styles.css">
+  </head>
+  <body>
+    <h1><%= dog.name %></h1>
+    <% if (dog.isComingToPlay) { %>
+      <p><%= dog.name %> is ready to play and make friends!</p>
+    <% } else { %>
+      <p><%= dog.name %> is here just for a walk/not ready for a friend yet!</p>
+    <% } %>
+  </body>
+  <br/>
+  <a href="/dogs/<%= dog._id %>/edit"><%= dog.name %>'s Profile</a>
+  <br/>
+  <a href="/dogs/">Friends At the Park</a>
+  <br/>
+  <form id="deletebtn" action="/dogs/<%=dog._id%>?_method=DELETE" method="POST">
+    <button type="submit">Delete <%= dog.name %>'s Profile</button>
+  </form>
+</html>
+
